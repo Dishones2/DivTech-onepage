@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>DivTech</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,16 +17,16 @@
         <div class="preloader__items">
           <div class="preloader__item">
 
-            <div class="preloader__item-box animate__animated animate__slideInUp">
+            <div class="preloader__item-box animated slideInUp faster">
 
-              <svg class="preloader__item-text preloader__item-text--top animate__animated animate__slideOutDown animate__delay-4s"
+              <svg class="preloader__item-text preloader__item-text--top animated slideOutDown faster delay-4s"
                 xmlns="http://www.w3.org/2000/svg" width="598" height="110" viewBox="0 0 598 110">
                 <defs>
 
                   <filter id="diverse" x="-0.607" y="0" width="1">
                     <feFlood flood-color="transparent" />
                     <feComposite in="SourceGraphic" operator="xor" />
-                    <animate attributeName="width" begin="0s" dur="2s" values="-1; 1;" repeatCount="1" />
+                    <animate attributeName="width" begin="0s" dur="1.5s" values="-1; 1;" repeatCount="1" />
                   </filter>
 
                 </defs>
@@ -48,16 +48,16 @@
           </div>
           <div class="preloader__item">
 
-            <div class="preloader__item-box animate__animated animate__slideInUp animate__delay-1s">
+            <div class="preloader__item-box preloader__item-box--bottom animated slideInUp faster">
 
-              <svg class="preloader__item-text preloader__item-text--bottom animate__animated animate__slideOutDown animate__delay-4s"
+              <svg class="preloader__item-text preloader__item-text--bottom animated slideOutDown faster"
                 xmlns="http://www.w3.org/2000/svg" width="1054" height="142" viewBox="0 0 1054 142">
                 <defs>
 
                   <filter id="tech" x="-0.64" y="0" width="1">
                     <feFlood flood-color="transparent" />
                     <feComposite in="SourceGraphic" operator="xor" />
-                    <animate attributeName="width" begin="0s" dur="2.5s" values="-1; 1;" repeatCount="1" />
+                    <animate attributeName="width" begin="0s" dur="2s" values="-1; 1;" repeatCount="1" />
                   </filter>
 
                 </defs>
@@ -106,13 +106,13 @@
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__list-item">
-                <a class="header__list-link" href="#">Компания</a>
+                <a class="header__list-link" href="#company">Компания</a>
               </li>
               <li class="header__list-item">
-                <a class="header__list-link" href="#">Вакансии</a>
+                <a class="header__list-link" href="#vacancies">Вакансии</a>
               </li>
               <li class="header__list-item">
-                <a class="header__list-link" href="#">Контакты</a>
+                <a class="header__list-link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -150,16 +150,16 @@
   <div class="wrapper">
     <main class="main">
 
-      <section class="directions">
+      <section class="directions" id="company">
         <div class="container">
-          <h2 class="title-top">
+          <h2 class="title title-top">
             Diverse Technologies создает
             цифровые продукты и сервисы,
             которые помогают компаниям стать лидерами в своей отрасли
           </h2>
 
           <div class="directions__inner">
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 Тревел и букинг
               </h4>
@@ -167,7 +167,7 @@
                 Поиск, бронирование и покупка авиабилетов, ЖД билетов, отелей и гостиниц, транспорта
               </p>
             </div>
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 E-commerce
               </h4>
@@ -175,7 +175,7 @@
                 Решения для продаж полного цикла: иследования, продажи, фидбек, аналитика и статистика
               </p>
             </div>
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 Логистика
               </h4>
@@ -183,7 +183,7 @@
                 Картография, составление умных маршрутов, мониторинг и управление транспортом
               </p>
             </div>
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 BigData менеджмент
               </h4>
@@ -191,7 +191,7 @@
                 Управление большими данными, аналитика и бесперебойность работы сервисов
               </p>
             </div>
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 IA и машинное обучение
               </h4>
@@ -199,7 +199,7 @@
                 Разработки в области умных систем, автоматизация и цифровизация сложных процессов в системе
               </p>
             </div>
-            <div class="directions__item">
+            <div class="directions__item wow fadeInUp">
               <h4 class="directions__item-title">
                 Клиентская аналитика
               </h4>
@@ -339,7 +339,7 @@
         </div>
       </section>
 
-      <section class="vacancies">
+      <section class="vacancies" id="vacancies">
         <div class="container">
           <h2 class="title">
             Открытые вакансии
@@ -350,7 +350,11 @@
             любящих учиться и всегда стремящихся стать лучше.
           </p>
 
-          <div class="vacancies__item">
+        </div>
+
+
+        <div class="vacancies__box">
+          <a class="vacancies__item" href="">
             <h4 class="vacancies__item-title">
               FullStack-разработчик senior
             </h4>
@@ -363,9 +367,11 @@
                 Алматы
               </div>
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="vacancies__item">
+        <div class="vacancies__box">
+          <a class="vacancies__item" href="">
             <h4 class="vacancies__item-title">
               Project manager middle
             </h4>
@@ -378,9 +384,11 @@
                 Алматы
               </div>
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="vacancies__item">
+        <div class="vacancies__box">
+          <a class="vacancies__item" href="">
             <h4 class="vacancies__item-title">
               Frontend-разработчик middle
             </h4>
@@ -393,9 +401,11 @@
                 Алматы
               </div>
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="vacancies__item">
+        <div class="vacancies__box">
+          <a class="vacancies__item" href="">
             <h4 class="vacancies__item-title">
               Backend-разработчик senior
             </h4>
@@ -408,9 +418,11 @@
                 Алматы
               </div>
             </div>
-          </div>
+          </a>
+        </div>
 
-          <div class="vacancies__item">
+        <div class="vacancies__box">
+          <a class="vacancies__item" href="">
             <h4 class="vacancies__item-title">
               UI дизайнер junior
             </h4>
@@ -423,12 +435,12 @@
                 Алматы
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="title title--white">
           Свяжитесь с нами <br> по любым вопросам
